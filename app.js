@@ -66,7 +66,7 @@ switch (firstAnswer) {
         break;
 
         case "":
-            answerArray.push("invalid")
+            answerArray.push(["invalid"])
         break;
 
     default:
@@ -96,7 +96,7 @@ let secondAnswer=prompt("Do you love shawerma?, answer Yes/No/y/n")
             break;
     
             case "":
-                answerArray.push("invalid")
+                answerArray.push(["invalid"])
             break;
     
         default:
@@ -128,7 +128,7 @@ let secondAnswer=prompt("Do you love shawerma?, answer Yes/No/y/n")
                 break;
         
                 case "":
-                    answerArray.push("invalid")
+                    answerArray.push(["invalid"])
                 break;
         
             default:
@@ -136,9 +136,8 @@ let secondAnswer=prompt("Do you love shawerma?, answer Yes/No/y/n")
         }
 //         }
 
-console.log(answerArray)
 
-for (var i = 0; i < answerArray.length; i++) { console.log(answerArray[i]); }
+for (let i = 0; i < answerArray.length; i++) { console.log(answerArray[i]); }
 
 
 let visitorRate=prompt("How Many stars Would you like to rate our Website (0-5)");
