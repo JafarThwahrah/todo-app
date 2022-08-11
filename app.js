@@ -46,7 +46,7 @@ const answerArray=[];
 let firstAnswer=prompt("Do you love botatos?, answer Yes/No/y/n")
 
 
-// while(firstAnswer== "y" || "n" ||"Yes" || "No"){
+// while(firstAnswer!== "y" || firstAnswer!== "n" || firstAnswer!=="Yes" || firstAnswer!== "No" || firstAnswer!== ""){
 switch (firstAnswer) {
         case "y":
             answerArray.push(firstAnswer)
@@ -72,11 +72,14 @@ switch (firstAnswer) {
     default:
         break;
 }
+firstAnswer=prompt("Do you love botatos?, answer Yes/No/y/n")
 // }
+
+
 
 let secondAnswer=prompt("Do you love shawerma?, answer Yes/No/y/n")
 
-// while(secondAnswer!= "y" || "n" ||"Yes" || "No"){
+// if(secondAnswer=== "y" || "n" ||"Yes" || "No"){
     switch (secondAnswer) {
             case "y":
                 answerArray.push(secondAnswer)
@@ -102,13 +105,13 @@ let secondAnswer=prompt("Do you love shawerma?, answer Yes/No/y/n")
         default:
             break;
     }
-//     }
+    // }
 
 
 
     let thirdAnswer=prompt("Do you love Coding?, answer Yes/No/y/n")
 
-    // while(thirdAnswer!= "y" || "n" ||"Yes" || "No"){
+    // while(thirdAnswer=== "y" || "n" ||"Yes" || "No"){
         switch (thirdAnswer) {
                 case "y":
                     answerArray.push(thirdAnswer)
@@ -134,7 +137,7 @@ let secondAnswer=prompt("Do you love shawerma?, answer Yes/No/y/n")
             default:
                 break;
         }
-//         }
+        // }
 
 
 for (let i = 0; i < answerArray.length; i++) { console.log(answerArray[i]); }
