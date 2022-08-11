@@ -46,7 +46,10 @@ const answerArray=[];
 let firstAnswer=prompt("Do you love botatos?, answer Yes/No/y/n")
 
 
-// while(firstAnswer== "y" || "n" ||"Yes" || "No"){
+while(firstAnswer!=="y" && firstAnswer!== "n" && firstAnswer!== "Yes" && firstAnswer!=="No" && firstAnswer!==""){
+    firstAnswer=prompt("Do you love botatos?, answer Yes/No/y/n")
+
+}
 switch (firstAnswer) {
         case "y":
             answerArray.push(firstAnswer)
@@ -66,17 +69,24 @@ switch (firstAnswer) {
         break;
 
         case "":
-            answerArray.push(["invalid"])
+            answerArray.push("invalid")
         break;
 
     default:
         break;
 }
-// }
+
+
+
 
 let secondAnswer=prompt("Do you love shawerma?, answer Yes/No/y/n")
 
-// while(secondAnswer!= "y" || "n" ||"Yes" || "No"){
+
+while(secondAnswer!=="y" && secondAnswer!== "n" && secondAnswer!== "Yes" && secondAnswer!=="No" && secondAnswer!==""){
+    secondAnswer=prompt("Do you love shawerma?, answer Yes/No/y/n")
+
+}
+
     switch (secondAnswer) {
             case "y":
                 answerArray.push(secondAnswer)
@@ -96,19 +106,24 @@ let secondAnswer=prompt("Do you love shawerma?, answer Yes/No/y/n")
             break;
     
             case "":
-                answerArray.push(["invalid"])
+                answerArray.push("invalid")
             break;
     
         default:
             break;
     }
-//     }
+    
 
 
 
     let thirdAnswer=prompt("Do you love Coding?, answer Yes/No/y/n")
 
-    // while(thirdAnswer!= "y" || "n" ||"Yes" || "No"){
+    while(thirdAnswer!=="y" && thirdAnswer!== "n" && thirdAnswer!== "Yes" && thirdAnswer!=="No" && thirdAnswer!==""){
+        thirdAnswer=prompt("Do you love Coding?, answer Yes/No/y/n")
+    
+    }
+
+
         switch (thirdAnswer) {
                 case "y":
                     answerArray.push(thirdAnswer)
@@ -128,13 +143,13 @@ let secondAnswer=prompt("Do you love shawerma?, answer Yes/No/y/n")
                 break;
         
                 case "":
-                    answerArray.push(["invalid"])
+                    answerArray.push("invalid")
                 break;
         
             default:
                 break;
         }
-//         }
+        
 
 
 for (let i = 0; i < answerArray.length; i++) { console.log(answerArray[i]); }
